@@ -39,6 +39,7 @@ try:
 
 
     def delete():
+        # this function here takes care of deleting an entry in the csv records
         while True:
             try:
                 
@@ -111,6 +112,7 @@ try:
 
         
     def search_Csv():
+        # this block of code here searches the program for a particular record
         while True:
             
             with open("Records.csv") as search_file:
@@ -132,6 +134,7 @@ try:
                 
                                                                                                                                                   
     def choices():
+        # ths function block offers a menu to select what to do
         while True:
             query = pyip.inputMenu(["Search", "Add", "Update", "Delete", "Quit"],numbered=1,lettered=False)
 
@@ -153,6 +156,7 @@ try:
                     quit()
 
     def authenticate():
+        # this block authenticates the person running the program
         while True:
             ma = ["Matilda","Naa","dede","Attoh","Brehun"]
             ma1 = ma[2]
